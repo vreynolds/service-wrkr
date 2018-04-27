@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/sw.js')
+                .then(function (registration) {
+                    console.log('YAY registered SW: ', registration)
+                })
+                .catch(function (err) {
+                    console.log('POO error registering SW: ', err)
+                });
+        }
+    </script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <p>Get your greeting <a href="/greeting">here</a></p>
+<p>Get your greeting <a href="/greeting">here</a></p>
 </body>
 </html>
