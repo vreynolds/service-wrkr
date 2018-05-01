@@ -1,0 +1,11 @@
+{
+  "name": "service-wrkr",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/vreynolds/service-wrkr.git",
+  "author": "vreynolds",
+  "license": "MIT",
+  "dependencies": {
+    "sw-toolbox": "^3.6.0"
+  }
+}
